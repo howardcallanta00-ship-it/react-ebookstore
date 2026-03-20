@@ -15,7 +15,7 @@ const Sidebar = ({ onSearch, onGenreSelect, selectedGenre }) => {
 
   // Fetch genres from backend — same as Module 2's dynamic categories bonus task
   useEffect(() => {
-    fetch("https://ebookstore-backend.onrender.com/api/genres")
+    fetch("https://ebookstore-backend-pm1p.onrender.com/api/genres")
       .then(res => res.json())
       .then(data => setGenres(data))
       .catch(() => {

@@ -8,7 +8,7 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://ebookstore-backend.onrender.com/api/books")
+    fetch("https://ebookstore-backend-pm1p.onrender.com/api/books")
       .then(res => res.json())
       .then(data => {
         setBooks(data.slice(0, 4));
