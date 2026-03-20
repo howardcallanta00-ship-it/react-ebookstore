@@ -10,7 +10,7 @@ const BookList = () => {
 
   // Fetch ALL books from backend — same as Module 2's ProductList
   useEffect(() => {
-    fetch("http://localhost:5000/api/books")
+    fetch("https://ebookstore-backend.onrender.com/api/books")
       .then(res => res.json())
       .then(data => {
         setBooks(data);
